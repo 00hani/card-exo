@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url("assets/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: Nunito-SemiBold;
+  src: url("assets/fonts/Nunito-SemiBold.ttf");
+}
+
+body {
+  background-color: #272a43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Nunito-Bold, sans-serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 90%;
+  padding: 16px;
+}
+h1 {
+  font-size: 25px;
+  color: white;
+}
+p {
+  color: #c2c2c5;
+  font-size: 18px;
+}
+#start-quiz {
+  color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(150, 86, 181, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 8px 60px;
+}
+#start-quiz:active {
+  cursor: pointer;
+  transform: translate(-2%, -3%);
+}
